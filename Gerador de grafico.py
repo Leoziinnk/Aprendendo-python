@@ -16,7 +16,7 @@ while True:
    quantidade_coordenadasx_int= int(quantidade_coordenadasx)
    quantidade_coordenadasy_int= int(quantidade_coordenadasy)
        
-   if(quantidade_coordenadasx_int==quantidade_coordenadasx_int):
+   if(quantidade_coordenadasx_int == quantidade_coordenadasy_int):
          break;
    else:
         print("Erro: A quantidade de coordenadas de x e y devem ser as mesmas")
