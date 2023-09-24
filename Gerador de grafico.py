@@ -10,26 +10,26 @@ x=[]
 y=[]
     
 while True:     
-   quantidade_dadosx= input("Insira a quantidade de dados x: ")
-   quantidade_dadosy = input("Insira a quantidade de dados y: ")
+   quantidade_coordenadasx= input("Insira a quantidade de coordenadas x: ")
+   quantidade_coordenadasy = input("Insira a quantidade de coordenadas y: ")
        
-   quantidade_dadosx_int= int(quantidade_dadosx)
-   quantidade_dadosy_int= int(quantidade_dadosy)
+   quantidade_coordenadasx_int= int(quantidade_coordenadasx)
+   quantidade_coordenadasy_int= int(quantidade_coordenadasy)
        
-   if(quantidade_dadosx_int==quantidade_dadosy_int):
+   if(quantidade_coordenadasx_int==quantidade_coordenadasx_int):
          break;
    else:
-        print("Erro: A quantidade de dados de x e y devem ser as mesmas")
+        print("Erro: A quantidade de coordenadas de x e y devem ser as mesmas")
             
-for dadosx in range(quantidade_dadosx_int):
-    dadosx_informados = input("Insira o dado de x: ")
-    dadosx_informados_int = int (dadosx_informados)
-    x.append(dadosx_informados_int)
+for coordenadasx in range(quantidade_coordenadasx_int):
+    coordenadasx_informados = input("Insira a coordenada de x: ")
+    coordenadasx_informados_int = int (coordenadasx_informados)
+    x.append(coordenadasx_informados_int)
                   
-for dadosy in range (quantidade_dadosy_int):
-    dadosy_informados = input("Insira o dado de y: ")
-    dadosy_informados_int = int(dadosy_informados)
-    y.append(dadosy_informados_int)
+for coordenadasy in range (quantidade_coordenadasy_int):
+    coordenadasy_informados = input("Insira o dado de y: ")
+    coordenadasy_informados_int = int(coordenadasy_informados)
+    y.append(coordenadasy_informados_int)
    
 plt.plot(x,y)
 plt.title("Gráfico")
